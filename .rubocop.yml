@@ -66,6 +66,9 @@ Style/FrozenStringLiteralComment:
 Style/IfUnlessModifier:
   Enabled: false
 
+Style/SymbolArray:
+  Enabled: false
+
 Style/WhileUntilModifier:
   Enabled: false
 
