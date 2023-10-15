@@ -1,6 +1,6 @@
-class CreateApikeys < ActiveRecord::Migration[6.0]
+class CreateApiKeys < ActiveRecord::Migration[6.0]
   def change
-    create_table :apikeys do |t|
+    create_table :api_keys do |t|
       t.references :user, null: false
       t.string :access_token, null: false
       t.datetime :expires_at
