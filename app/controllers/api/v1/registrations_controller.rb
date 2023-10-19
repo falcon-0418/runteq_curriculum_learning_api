@@ -11,7 +11,6 @@ module Api
         if @user.save
           json_string = UserSerializer.new(@user).serialized_json
           set_access_token!(@user)
-          
           render json: json_string
         else
           render_400(nil, @user.errors.full_messages)
